@@ -122,3 +122,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = "/image/download/"
 MEDIA_ROOT = BASE_DIR
+
+RAZORPAY_API_KEY = 'rzp_test_QzSYbn33mWV2Ju'
+PAZORPAY_API_SECRET_KEY = 'wTWcYsuRqsF2RYjcA9QY4UJB'
