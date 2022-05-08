@@ -31,11 +31,12 @@ class CheckOut(View):
             price = product.price
             total += quantity * price
         print(total)
+        amount = total
         total = total*100
         payment_order = client.order.create(dict(amount=total, currency="INR",payment_capture=1))
         payment_order_id = payment_order['id']
         data = {
-            'amount': total, 
+            'amount': amount, 
             'api_key': RAZORPAY_API_KEY, 
             'order_id': payment_order_id
         }
